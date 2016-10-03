@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FriendFlix by John Kahn</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style type="text/css">
+		@font-face {
+			font-family: "Bebas Neue",
+			src: url("BebasNeue Bold.otf");
+		}
+
+		body {
+			background-color: #b00707;
+			margin: 0;
+			padding: 0;
+		}
+
+		.wrapper {
+			width: 100%;
+			max-width: 960px;
+			margin: 0 auto;
+		}
+
+		.logo {
+			display: block;
+			margin: 20px auto;
+			width: calc(100% - 20px);
+		}
+
+		.coming-soon-wrapper {
+			text-align: center;
+		}
+
+		.coming-soon-tag {
+			display: inline-block;
+			font-family: "Bebas Neue";
+			font-weight: 400;
+			font-size: 56px;
+			padding: 10px 20px;
+			color: white;
+			border: solid 0px white;
+			border-radius: 5px;
+		}
+
+		.macbook {
+			display: block;
+			margin: 40px auto 0;
+			width: 100%;
+			max-width: 1024px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<img class="logo" src="logo.svg">
+		<div class="coming-soon-wrapper">
+			<div class="coming-soon-tag">Coming soon to chrome</div>
+		</div>
+		<img class="macbook" src="MacBook-Display.png">
+	</div>
+
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="jquery.fittext.js"></script>
+</body>
+</html>
