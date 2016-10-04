@@ -79,9 +79,36 @@
       width: 100%;
       max-width: 1024px;
     }
+
+    .corner-ribbon{
+      width: 300px;
+      background: #f0f0f0;
+      position: fixed;
+      top: 50px;
+      left: -75px;
+      text-align: center;
+      line-height: 50px;
+      letter-spacing: 1px;
+      font-family: "Roboto";
+      font-weight: 700;
+      color: #555555;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .corner-ribbon a {
+      color: currentColor;
+      text-decoration: none;
+    }
+
+    .corner-ribbon a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
+  <div class="corner-ribbon">Made at <a href="http://www.tamuhack.com/" target="_blank">TamuHack</a></div>
   <div class="wrapper">
     <div class="content">
       <img class="logo" src="logo.svg">
