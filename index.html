@@ -1,67 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>FriendFlix by John Kahn</title>
+  <title>FriendFlix by John Kahn</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<style type="text/css">
-		@font-face {
-			font-family: "Bebas Neue",
-			src: url("BebasNeue Bold.otf");
-		}
+  <style type="text/css">
+    @import 'https://fonts.googleapis.com/css?family=Roboto:300';
 
-		body {
-			background-color: #b00707;
-			margin: 0;
-			padding: 0;
-		}
+    @font-face {
+      font-family: 'Bebas Neue';
+      src: url('bebasneue_bold-webfont.woff') format('woff'),
+           url('bebasneue_bold-webfont.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
 
-		.wrapper {
-			width: 100%;
-			max-width: 960px;
-			margin: 0 auto;
-		}
+    @font-face {
+      font-family: 'Liberation Sans';
+      src: url('liberationsans-regular-webfont.woff') format('woff'),
+           url('liberationsans-regular-webfont.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
 
-		.logo {
-			display: block;
-			margin: 20px auto;
-			width: calc(100% - 20px);
-		}
+    body {
+      background-color: #b00707;
+      margin: 0;
+      padding: 0;
+    }
 
-		.coming-soon-wrapper {
-			text-align: center;
-		}
+    .wrapper {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 960px;
+      
+    }
 
-		.coming-soon-tag {
-			display: inline-block;
-			font-family: "Bebas Neue";
-			font-weight: 400;
-			font-size: 56px;
-			padding: 10px 20px;
-			color: white;
-			border: solid 0px white;
-			border-radius: 5px;
-		}
+    .content {
+      padding: 0 20px;
+    }
 
-		.macbook {
-			display: block;
-			margin: 40px auto 0;
-			width: 100%;
-			max-width: 1024px;
-		}
-	</style>
+    .logo {
+      margin: 40px 0;
+      width: 100%;
+    }
+
+    .coming-soon-tag {
+      display: block;
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      font-size: 3em;
+      padding: 10px 20px;
+      margin: 0;
+      color: white;
+      border: solid 0px white;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .coming-soon-tag.small {
+      font-size: 2em;
+    }
+
+    .about {
+      font-family: "Roboto", sans-serif;
+      font-weight: lighter;
+      color: white;
+      font-size: 1.7em;
+    }
+
+    .macbook {
+      display: none;
+      /*display: block;*/
+      margin: 40px auto 0;
+      width: 100%;
+      max-width: 1024px;
+    }
+  </style>
 </head>
 <body>
-	<div class="wrapper">
-		<img class="logo" src="logo.svg">
-		<div class="coming-soon-wrapper">
-			<div class="coming-soon-tag">Coming soon to chrome</div>
-		</div>
-		<img class="macbook" src="MacBook-Display.png">
-	</div>
+  <div class="wrapper">
+    <div class="content">
+      <img class="logo" src="logo.svg">
+      <h2 class="coming-soon-tag">Coming soon to Chrome</h2>
+      <h2 class="coming-soon-tag small">and eventually Firefox and MS Edge</h2>
+      <p class="about">
+        FriendFlix is an extension that allows you to recommend movies with your friends. Their recommendations for you will be on your Netflix homepage. You'll see a new list on your Netflix homepage titled "Recommended by Friends". You sign in with Facebook and you can recommend any movie, documentary, or tv show with your friends on Facebook. If they have FriendFlix, it will be added to their list. If they don't, then we will send them a message on Facebook letting them know that you have. They can download the extension from the message and see all the movies their friends have recommended.
+      </p>
+      <img class="macbook" src="MacBook-Display.png">
+    </div>
+  </div>
 
-	<script src="jquery-3.1.1.min.js"></script>
-	<script src="jquery.fittext.js"></script>
+  <script src="jquery-3.1.1.min.js"></script>
+  <script src="jquery.fittext.js"></script>
 </body>
 </html>
