@@ -36,11 +36,8 @@
       transform: translateX(-50%);
       width: 100%;
       max-width: 960px;
-      
-    }
-
-    .content {
       padding: 0 20px;
+      box-sizing: border-box;
     }
 
     .logo {
@@ -105,20 +102,24 @@
     .corner-ribbon a:hover {
       text-decoration: underline;
     }
+
+    @media screen and (max-width: 1300px) {
+      .corner-ribbon {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="corner-ribbon">Made at <a href="http://www.tamuhack.com/" target="_blank">TamuHack</a></div>
   <div class="wrapper">
-    <div class="content">
-      <img class="logo" src="logo.svg">
-      <h2 class="coming-soon-tag">Coming soon to Chrome</h2>
-      <h2 class="coming-soon-tag small">and eventually Firefox and MS Edge</h2>
-      <p class="about">
-        FriendFlix is an extension that allows you to recommend movies with your friends. Their recommendations for you will be on your Netflix homepage. You'll see a new list on your Netflix homepage titled "Recommended by Friends". You sign in with Facebook and you can recommend any movie, documentary, or tv show with your friends on Facebook. If they have FriendFlix, it will be added to their list. If they don't, then we will send them a message on Facebook letting them know that you have. They can download the extension from the message and see all the movies their friends have recommended.
-      </p>
-      <img class="macbook" src="MacBook-Display.png">
-    </div>
+    <img class="logo" src="logo.svg">
+    <h2 class="coming-soon-tag">Coming soon to Chrome</h2>
+    <h2 class="coming-soon-tag small">and eventually Firefox and MS Edge</h2>
+    <p class="about">
+      FriendFlix is an extension that allows you to recommend movies with your friends. Their recommendations for you will be on your Netflix homepage. You'll see a new list on your Netflix homepage titled "Recommended by Friends". You sign in with Facebook and you can recommend any movie, documentary, or tv show with your friends on Facebook. If they have FriendFlix, it will be added to their list. If they don't, then we will send them a message on Facebook letting them know that you have. They can download the extension from the message and see all the movies their friends have recommended.
+    </p>
+    <img class="macbook" src="MacBook-Display.png">
   </div>
 
   <script src="jquery-3.1.1.min.js"></script>
