@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Friendflix",
+    "description": "flix your friends",
+    "version": "0.0.1",
+
+    "permissions": [
+        "tabs",
+        "webRequest",
+        "webRequestBlocking",
+        "cookies",
+        "https://www.netflix.com/",
+        "https://connect.facebook.net/"
+    ],
+
+    "browser_action": {
+        "default_title": "FriendFlix",
+        "default_popup": "popup.html"
+    },
+
+    "background": {
+        "scripts": ["utils.js", "requestProxy.js"],
+        "persistent": true
+    },
+
+    "content_security_policy": "script-src 'self' https://connect.facebook.net/en_US/sdk.js; object-src 'self'"
+}

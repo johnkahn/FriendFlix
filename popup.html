@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body {
+			width: 350px;
+			padding: 10px;
+		}
+
+		h2 {
+			margin: 0 0 5px 0	;
+		}
+	</style>
+	<script src="facebook.js"></script>
+</head>
+<body>
+	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+	<div id="status">Status</div>
+</body>
+</html>
